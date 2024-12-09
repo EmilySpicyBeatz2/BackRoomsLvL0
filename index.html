@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg1" id="bodID">
+    <div class="modalGif center-content" id="modalGif">
+      <div class="modal-content-gif center-content">
+        <img src="video/BRintro-gif.gif" />
+      </div>
+    </div>
+    <!------------------------------Column 1-------------------->
+    <div class="col1">
+      <div class="box1 center-content" id="keyclick">
+        <img
+          class="keySmall clickable"
+          src="images/key.png"
+          id="key"
+          onclick="keyGone()"
+        />
+      </div>
+    </div>
+    <!-------------------------------Column Middle-------------->
+    <div class="mCol">
+      <div
+        class="box2 arrowClass translucent"
+        id="door"
+        onclick="changeHtml1()"
+      >
+        <img src="images/scaryArrow.png" />
+      </div>
+    </div>
+    <!-------------------------------Column 2------------------->
+    <div class="col2" id="columnWithModel">
+      <div class="box2 center-content">
+        <img
+          src="images/clickerNoteICO.ico"
+          class="clickable"
+          id="ico"
+          onclick="firstShowModel()"
+        />
+      </div>
+    </div>
+    <!---------------------------First model-------------------->
+    <div class="modal center-content" id="mode1">
+      <div class="modal-content center-content">
+        <span class="close" style="font-size: 50px" onclick="firstHideModel()"
+          >&times;</span
+        >
+        <img src="images/IntroText.png" />
+      </div>
+    </div>
+    <!---------------------------Extra stuff-------------------->
+    <audio src="audio/Collect.mp3" type="audio/mp3" id="getItem"></audio>
+    <audio src="audio/UnlockDoorSE.mp3" type="audio/mp3" id="LockSE"></audio>
+    <audio src="audio/BackroomsAmbi1min.mp3" type="audio/mp3" id="ambi"></audio>
+    <audio src="audio/Scream.mp3" type="audio/mp3" id="rawr"></audio>
+    <script src="script.js"></script>
+    <script src="preload.js"></script>
+  </body>
+</html>

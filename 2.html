@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+</html>
+<body class="bg3" id="bodIdity">
+  <!------------------------------Column 1------------------>
+  <div class="col1">
+    <div class="box1 center-content clickableCip">
+      <img src="images/cipherFixed.png" onclick="secondShowModel()"/>
+    </div>
+  </div>
+  <!------------------------------Middle Column------------->
+  <div class="mCol">
+    <div class="box1 center-content">
+      <img src="" />
+    </div>
+  </div>
+  <!------------------------------Column 2------------------>
+  <div class="col2">
+    <div class="box1 monsterClass">
+      <img src="images/smiler.jpg" id="smile"/>
+    </div>
+  </div>
+  <!------------------------------Second Modal-------------->
+  <div class="modal center-content" id="moda2">
+    <div class="modal-content center-content">
+      <span class="close" style="font-size: 50px" onclick="secondHideModel()">&times;</span>
+      <div class="row center-content">
+        <div class="box">
+          <img src="images/cipherFixed.png"/>
+        </div>
+        <div class="box center-content">
+          <img src="images/deCipher.png">
+          <input type="text" id="myText" value="Type here">
+          <input type="submit" value="Submit" onclick="checkInput()" />
+        </div>
+    </div>
+  </div>
+  <!------------------------------Extra Stuff--------------->
+  <audio src="audio/FinalScream.mp3" type="audio/mp3" id="rawr"></audio>
+  <audio src="audio/UnlockDoorSE.mp3" type="audio/mp3" id="LockSE"></audio>
+  <audio src="audio/wompwomp.mp3" type="audio/mp3" id="wompwomp"></audio>
+  <script src="script.js"></script>
+  <script src="preload.js"></script>
+</body>

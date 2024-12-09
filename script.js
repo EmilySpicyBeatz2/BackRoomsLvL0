@@ -10,7 +10,7 @@ function changeHtml2() {
 }
 
 function Finale() {
-  window.location.href = "https://52wyt8.csb.app/";
+  window.location.href = "https://emilyspicybeatz2.github.io/BackroomsLVL0-end/";
 }
 
 function keyGone() {
